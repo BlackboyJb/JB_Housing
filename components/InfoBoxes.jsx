@@ -9,7 +9,7 @@ const InfoBoxes = () => {
             buttonInfo={{
               text: "Browse Properties",
               link: "/properties",
-              background: "bg-black",
+              background: "bg-blue-500",
             }}
           >
             Find your dream rental property. Bookmark properties and contact
@@ -21,7 +21,7 @@ const InfoBoxes = () => {
             buttonInfo={{
               text: "Add Property",
               link: "/properties/add",
-              background: "bg-blue-500",
+              background: "bg-neutral-900",
             }}
           >
             List your properties and reach potential tenants. Rent as an airbnb

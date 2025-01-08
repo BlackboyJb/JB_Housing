@@ -2,6 +2,9 @@ import PropertyHeaderImage from "@/components/PropertyHeaderImage";
 import PropertyDetails from "@/components/PropertyDetails";
 import PropertyImages from "@/components/PropertyImages";
 import connectDB from "@/config/database";
+import BookmarkButton from "@/components/BookmarkButton";
+import ShareButtons from "@/components/ShareButtons";
+import PropertyContactForm from "@/components/PropertyContactForm";
 import Property from "@/models/Property";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
@@ -39,6 +42,11 @@ const PropertyId = async ({ params }) => {
           <div className="grid grid-cols-1 md:grid-cols-70/30 w-full gap-6">
             {/* Proeprty Info */}
             <PropertyDetails property={propertyDoc} />
+            <aside className="space-y-4">
+              <BookmarkButton property={propertyDoc} />
+              <ShareButtons property={propertyDoc} />
+              <PropertyContactForm property={propertyDoc} />
+            </aside>
           </div>
         </div>
       </section>
